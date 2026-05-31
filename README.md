@@ -8,13 +8,13 @@
 |---|---|---|---|---|---|---|
 | [Telegram](./telegram-bot-api-autoposting.md) | Bot-токен | **low** | **Нет** | моментально | Создать бота у `@BotFather` | Нет |
 | [MAX](./max-bot-api-autoposting.md) | Bot-токен | **low-medium** | **Нет** | моментально | Получить токен в кабинете MAX | Нет |
-| [X / Twitter](./x-twitter-api-autoposting.md) | OAuth + кредиты | **medium** (финансово high) | **Нет ревью, есть payment** | моментально | Создать app + купить кредиты | Нет (через биллинг) |
+| [X / Twitter](./x-twitter-api-autoposting.md) | OAuth 2.0 | **medium** (финансово high) | **Нет ревью, есть payment** | моментально | Создать app + купить кредиты | Нет (через биллинг) |
 | [OK (Одноклассники)](./odnoklassniki-api-autoposting.md) | OAuth + MD5-подпись | **medium-high** | **Да** — модерация приложения | дни | Заявка через devaccess + email-подтверждение | Низкий |
 | [YouTube](./youtube-data-api-autoposting.md) | OAuth 2.0 (Google) | **medium-high** | **Только для квоты >10k units/день** | недели | Compliance Audit form | Средний |
-| [Facebook](./facebook-pages-api-autoposting.md) / [Instagram](./instagram-graph-api-autoposting.md) / [Threads](./threads-api-autoposting.md) | OAuth (Page-токен бессрочный) | **medium-high** | **Да** | недели — месяцы | App Verification + Permissions Review + Business Verification + Privacy Policy + скринкаст | Низкий-средний (для нашего профиля) |
-| [LinkedIn](./linkedin-posts-api-autoposting.md) | OAuth 2.0 (access 60 дн) | **medium-high** | **Да** | до 12 мес (Dev tier), отдельно Standard | Application form через Developer Portal | Средний |
-| [VK](./vk-api-autoposting.md) | Community-токен из UI группы | **medium-high** | **Да** для scope `wall`/`photos` user-токена | переписка | Email на devsupport@corp.vk.com | Высокий (выдаётся в исключительных случаях) |
-| [TikTok](./tiktok-content-posting-api-autoposting.md) | OAuth (access 24 ч, refresh 365 дн) | **high** | **Да** (audit) | недели | Заявка + use case + UX-compliance | Высокий (политика «authentic creators», запрет cross-post) |
+| [Facebook](./facebook-pages-api-autoposting.md) / [Instagram](./instagram-graph-api-autoposting.md) / [Threads](./threads-api-autoposting.md) | OAuth 2.0 | **medium-high** | **Да** | недели — месяцы | App Verification + Permissions Review + Business Verification + Privacy Policy + скринкаст | Низкий-средний (для нашего профиля) |
+| [LinkedIn](./linkedin-posts-api-autoposting.md) | OAuth 2.0 | **medium-high** | **Да** | до 12 мес (Dev tier), отдельно Standard | Application form через Developer Portal | Средний |
+| [VK](./vk-api-autoposting.md) | Community-токен из UI группы / User-токен | **medium-high** | **Нет** / **Да** для scope `wall`, `photos` user-токена | моментально / переписка | Админ сообщества создаёт ключ в настройках группы (Управление → Дополнительно → Работа с API) / Email на devsupport@corp.vk.com | Низкий / Высокий (выдаётся в исключительных случаях) |
+| [TikTok](./tiktok-content-posting-api-autoposting.md) | OAuth 2.0 | **high** | **Да** (audit) | недели | Заявка + use case + UX-compliance | Высокий (политика «authentic creators», запрет cross-post) |
 
 > **Facebook / Instagram / Threads — одна строка, потому что общая бюрократия**: одно Meta-приложение, одна Business Verification, один комплект Privacy Policy / Terms, один скринкаст. Но **Permissions Review проходит отдельно по каждому праву** (`pages_manage_posts`, `instagram_content_publish`, `threads_content_publish`) — Meta может одобрить одно и отказать в другом. Срок и риск общие, потому что заявки идут параллельно одним пакетом.
 
